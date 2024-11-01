@@ -1,0 +1,19 @@
+body {
+    background-image: url('images/two.jpg'); /* Adjust path to go up one directory */
+    background-size: cover; /* Optional: makes the image cover the whole body */
+    background-repeat: no-repeat; /* Optional: prevents the image from repeating */
+    background-position: center; /* Optional: centers the image */
+}
+
+
+.jj{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    background-color: black;
+    display: flex;
+
+}
