@@ -1,0 +1,55 @@
+{% extends "core.html" %}
+
+{%block body%}
+<div class = 'list'>
+  <div style="background-color: rgb(37, 35, 35); height: 50px;" class="nav">
+    <h1 id= "test">Trainers</h1>
+    <form class="d-flex" role="search"  action="{% url 'search_train'%}">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name = 'query'>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    </div>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Sl.No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">phone number</th>
+            <th scope="col">email</th>
+            <th scope="col">Payscale</th>
+            <th scope="col">join_date</th>
+            <th scope="col"></th>
+
+          </tr>
+        </thead>
+        <tbody>
+          {%for i in data%}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.phone_no}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.payscale}}</td>
+        <td>{{i.join_date}}</td>
+        <td><a href="{%url 'train_delete' i.id%}"><button class="btn btn-primary">Delete</button></a></td>
+        
+      </tr>
+      {%endfor%}
+      
+          
+        </tbody>
+      </table>
+</div>
+{%endblock body%}
+{%block footer%}
+<div class = 'temp'>
+    
+</div>
+
+<div class="navbar custom-dark-bg border-bottom border-body" data-bs-theme="dark">
+  <span id = 'bt' ><a href = "{% url 'main'%}"><button class="btn btn-primary">Back</button></a></span>
+  <span id = 'bt' ><a href = "{% url 'add_train'%}"><button class="btn btn-primary">Add</button></a></span>
+   <span id = 'bt' ><a href = "{% url 'logout'%}"><button class="btn btn-primary">logout</button></a></span>
+</div>
+
+{%endblock footer%}

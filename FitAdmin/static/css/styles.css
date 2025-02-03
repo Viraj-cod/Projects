@@ -1,0 +1,227 @@
+
+.all{
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: left;
+    height: 244px;
+}
+
+#first{
+    text-decoration: none;
+    flex: 1; /* Allow items to grow equally */
+    margin: 30px;
+    border-radius:2%; /* Optional margin between items */
+    padding: 70px; /* Padding inside each item */
+    background-color: rgb(26, 39, 41); /* Green background */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    opacity: 0.6;
+    
+}
+
+#second{
+    border-radius:2%;
+    flex: 1; /* Allow items to grow equally */
+    margin: 30px; /* Optional margin between items */
+    padding: 70px; /* Padding inside each item */
+    background-color:rgb(26, 39, 41); /* Green background */
+    color: black; /* White text color */
+    text-align: center; /* Center text */
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#third{
+    text-decoration: none;
+    flex: 1; /* Allow items to grow equally */
+    margin: 30px;
+    border-radius:2%; /* Optional margin between items */
+    padding: 70px; /* Padding inside each item */
+    background-color:rgb(26, 39, 41); /* Green background */
+    color: black; /* White text color */
+    text-align: center; /* Center text */
+    opacity: 0.6;
+}
+
+#fourth{
+    border-radius:2%;
+    flex: 1; /* Allow items to grow equally */
+    margin: 30px; /* Optional margin between items */
+    padding: 70px; /* Padding inside each item */
+    background-color:rgb(26, 39, 41); /* Green background */
+    color: black; /* White text color */
+    text-align: center; /* Center text */
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+
+
+.footer{
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 0;
+}
+
+
+#lt{
+    padding-right : 0%;
+}
+#bd{
+    margin-top: 0;
+    padding-top: 90px;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url("{% static 'img/main.jpg'%}"); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center 70%; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+#bt{
+    margin-right: 10px;
+}
+.no_underline{
+    text-decoration: none; /* Removes the underline from links */
+}
+.list{
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+#test{
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+}
+.form{
+   
+    padding: 200px;
+    padding-top: 0px;
+}
+#bx{
+    opacity: 0.5;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+.pagination a, .pagination span {
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .current {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.afooter{
+    bottom: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temp{
+    height: 88px;
+    
+}
+.custom-dark-bg {
+    background-color: #121212 !important;  /* Darker shade */
+}
+
+#rep{
+    margin-right: 20px;
+    margin-top: 5px;
+    color: honeydew;
+}
+
+#gal{
+    color: black;
+    text-align: center;
+
+}
+.cont{
+
+    background-color: white;
+    margin: 20px;
+    height: 450px;
+    border-radius: 10%;
+    opacity: 0.9;
+
+}
+#in{
+    text-align: center;
+    font-size: large;
+    color: #121212;
+
+}
+
+.carousel-inner img {
+    height: 500px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+
+  .gal_all{
+    text-align: center;
+    color: white;
+  }
+
+  .carousel{
+    margin: 20px;
+    margin-top: 30px;
+
+}
+
+#mem_rep{
+    color: white;
+    background-color: #121212;
+    text-align: center;
+    height: 60px;
+}
+
+.fee{
+    color: white;
+    text-align: center;
+    background-color: #121212;
+    height: 50px;
+}
+
+.struct_all{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.ek{
+    background-color: white;
+    height: 500px;
+    width: 600px;
+}
+
+.don{
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    margin-left: 145px;
+}
+
+.img{
+    height: 200px;
+    padding-left: 150px;
+}

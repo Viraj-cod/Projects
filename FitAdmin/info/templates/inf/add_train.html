@@ -1,0 +1,27 @@
+{% extends "core.html" %}
+{%block body%}
+<div class="form">
+    <form action="" method="post">
+        {% csrf_token%}
+        {%for field in form%}
+        <h2 style = 'color:white;'>{{field.label}}</h2>
+            <span id="bx">{{field}}</span>
+
+        <br>
+
+        {%endfor%}
+        <button type="submit" class = 'btn btn-primary'>submit</button>
+    </form>
+</div>
+{%endblock body%}
+{%block footer%}
+
+
+<div class="navbar custom-dark-bg border-bottom border-body" data-bs-theme="dark">
+  
+  <span id = 'bt' ><a href = "{% url 'main'%}"><button class="btn btn-primary">Back</button></a></span>
+  <span id = 'bt' ><a href = "{% url 'add_ace'%}"><button class="btn btn-primary">Add</button></a></span>
+   <span id = 'bt' ><a href = "{% url 'logout'%}"><button class="btn btn-primary">logout</button></a></span>
+</div>
+
+{%endblock footer%}
