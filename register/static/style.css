@@ -1,0 +1,66 @@
+.content{
+    display: flex;
+    justify-content: left;
+}
+
+.one{
+    height: 600px;
+    width: 900px;
+    background-image: url('color.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.two{
+    height: 600px;
+    width: 600px;
+    background-color: rgb(122, 238, 238);
+}
+
+#bd{
+    margin-top: 0;
+    padding-top: 120px;
+    height: 100vh; /* Full height of the viewport */
+    background-color:black; /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center 70%; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+#bd2{
+    margin-top: 0;
+    padding-top: 30px;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('color.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center 70%; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+#txt{
+    text-align: center;
+    height: 40px;
+    color: white;
+}
+
+.iner{
+    width: 300px; /* Set a width */
+    margin: 0 auto; /* Auto margins to center horizontally */
+    color: white;
+}
+
+#bt{
+    margin-left: 125px;
+}
+
+#logo{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:overline;
+    padding-left: 300px;
+    margin-top: 20px;
+    height: 100px;
+    font-size: 100px;
+}
+
