@@ -1,0 +1,186 @@
+ {% extends "show/inh.html" %}
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block extra_styles %}
+    <link rel="stylesheet" href="{% static 'mcss/ab.css' %}">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        
+        #Imp2{
+            height: 120px;
+            width: 100px;
+            margin-top: 30px;
+            background-color: white;
+            background-image: url("{% static 'img/icon1.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        #Imp3{
+            height: 150px;
+            width: 100px;
+            margin-top: 30px;
+            background-color: white;
+            background-image: url("{% static 'img/icon2.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        #Imp4{
+            height: 150px;
+            width: 150px;
+            margin-top: 30px;
+            background-color: white;
+            background-image: url("{% static 'img/icon3.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        #Imp5{
+            height: 150px;
+            width: 150px;
+            margin-top: 30px;
+            background-color: white;
+            background-image: url("{% static 'img/icon4.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        .gallery-itemONE {
+            background-color: #333;
+            padding: 10px;
+            /*border-radius: 5px;*/
+            height: 300px;
+            text-align: center;
+            background-color: white;
+            background-image: url("{% static 'img/temp1.jpeg' %}");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+        .gallery-item2 {
+            background-color: #333;
+            padding: 10px;
+            /*border-radius: 5px;*/
+            height: 300px;
+            text-align: center;
+            background-color: white;
+            background-image: url("{% static 'img/temp2.jpeg' %}");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+        .gallery-item3 {
+            background-color: #333;
+            padding: 10px;
+            /*border-radius: 5px;*/
+            height: 300px;
+            text-align: center;
+            background-color: white;
+            background-image: url("{% static 'img/temp3.jpeg' %}");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+        .gallery-item4 {
+            background-color: #333;
+            padding: 10px;
+            /*border-radius: 5px;*/
+            height: 300px;
+            text-align: center;
+            background-color: white;
+            background-image: url("{% static 'img/temp4.jpeg' %}");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+    
+        .gallery-item5 {
+            background-color: #333;
+            padding: 10px;
+            /*border-radius: 5px;*/
+            height: 300px;
+            text-align: center;
+            background-color: white;
+            background-image: url("{% static 'img/temp5.jpeg' %}");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+    
+        .gallery-item6 {
+            background-color: #333;
+            padding: 10px;
+            /*border-radius: 5px;*/
+            height: 300px;
+            text-align: center;
+            background-color: white;
+            background-image: url("{% static 'img/temp6.jpeg' %}");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+    </style>
+    {% endblock %}
+    
+    
+</head>
+
+    {% block body%}
+    <h1>Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery-itemONE" style="background-color: green;">
+            <p>Image 1</p>
+        </div>
+        <div class="gallery-item2" style="background-color: red;">
+            <p>Image 2</p>
+        </div>
+        <div class="gallery-item3" style="background-color: blue;">
+            <p>Image 2</p>
+        </div>
+        <div class="gallery-item4" style="background-color: beige;">
+            <p>Image 2</p>
+        </div>
+        <div class="gallery-item5" style="background-color: yellow;">
+            <p>Image 2</p>
+        </div>
+        <div class="gallery-item6" style="background-color: yellow;">
+            <p>Image 2</p>
+        </div>
+        
+        
+        
+       
+    </div>
+    
+        <h1 id="galcnt"><pre>Get these advertisment for your
+Business
+</pre> </h1>
+<div class="glbt">
+    <a href="{% url 'contact'%}"><button id="btgl">Here</button></a>
+</div>
+    <div class="mem">
+        <div id="mpc1"><pre>Keep in
+Touch With 
+Us!</pre> </div>
+        <div id="mpc2"><a href="https://www.instagram.com/"><div id="Imp2"></div></a></div>
+        <div id="mpc3"><a href="https://www.facebook.com/"><div id="Imp3"></div></a></div>
+        <div id="mpc4"><a href="https://x.com/"><div id="Imp4"></div></a></div>
+        <div id="mpc4"><a href="https://www.linkedin.com/"><div id="Imp5"></div></a></div>
+
+    </div>
+    <div class="tpgal">
+
+    </div>
+    
+    {% endblock %}
+</html>

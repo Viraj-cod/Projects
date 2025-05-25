@@ -1,0 +1,268 @@
+{% extends "show/inh.html" %} 
+<!-- it is loading global css file not apps css file -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block extra_styles %}
+    <link rel="stylesheet" href="{% static 'mcss/ab.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        .img{
+    height: 800px;
+    background-image: url("{% static 'img/ab4.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100vw;
+    height: 400px;
+    margin-bottom: 0%;
+    
+}
+.abimg{
+    background-image: url("{% static 'img/who_we.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+#Imp2{
+    height: 120px;
+    width: 100px;
+    margin-top: 30px;
+    background-color: white;
+    background-image: url("{% static 'img/icon1.png' %}");
+background-position: top;
+background-size: 110px;
+background-repeat: no-repeat;
+}
+#Imp3{
+    height: 120px;
+    width: 100px;
+    margin-top: 30px;
+    background-color: white;
+    background-image: url("{% static 'img/icon2.png' %}");
+background-position: top;
+background-size: 110px;
+background-repeat: no-repeat;
+}
+#Imp4{
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    background-color: white;
+    background-image: url("{% static 'img/icon3.png' %}");
+background-position: top;
+background-size: 110px;
+background-repeat: no-repeat;
+}
+#Imp5{
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    background-color: white;
+    background-image: url("{% static 'img/icon4.png' %}");
+background-position: top;
+background-size: 110px;
+background-repeat: no-repeat;
+}
+.galleryitem1{
+    background-color: white;
+    background-image: url("{% static 'img/uno.jpeg' %}");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 320px;
+    width: 380px;
+    padding-left: 25px;
+    text-align: center;
+    
+}
+.galleryitem2{
+    background-color: white;
+    background-image: url("{% static 'img/sh2.jpeg' %}");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 50%;
+    height: 320px;
+    width: 380px;
+    padding-left: 25px;
+    text-align: center;
+}
+.galleryitem3{
+    background-color: white;
+    background-image: url("{% static 'img/Viraj.jpeg' %}");
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 10px;
+    border-radius: 50%;
+    height: 320px;
+    width: 380px;
+    padding-left: 25px;
+    text-align: center;
+}
+.galleryitem4{
+    background-color: white;
+    background-image: url("{% static 'img/uno.jpeg' %}");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 10px;
+    border-radius: 50%;
+    height: 320px;
+    width: 380px;
+    padding-left: 25px;
+    text-align: center;
+}
+.galleryitem5{
+    background-color: white;
+    background-image: url("{% static 'img/uno.jpeg' %}");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 10px;
+    border-radius: 50%;
+    height: 320px;
+    width: 380px;
+    padding-left: 25px;
+    text-align: center;
+}
+.galleryitem6{
+    background-color: white;
+    background-image: url("{% static 'img/uno.jpeg' %}");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 10px;
+    border-radius: 50%;
+    height: 320px;
+    width: 380px;
+    padding-left: 25px;
+    text-align: center;
+}
+.infurniture{
+    font-family: 'Playfair Display', serif;
+}
+#n1,#n2,#n3,#n4,#n5,#n6{
+    margin-top: 300px;
+    color: black;
+        font-size: xx-large;
+        background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+@media(max-width: 900px){
+    .galleryitem1{
+    
+    height: 200px;
+    width: 180px;
+    
+}
+#n1,#n2,#n3,#n4,#n5,#n6{
+    margin-top: 160px;
+}
+.galleryitem2{
+    height: 200px;
+    width: 180px;
+}
+.galleryitem3{
+    height: 200px;
+    width: 180px;
+}
+.galleryitem4{
+    height: 200px;
+    width: 180px;
+}
+.galleryitem5{
+    height: 200px;
+    width: 180px;
+}
+.galleryitem6{
+    height: 200px;
+    width: 180px;
+}
+.infurniture{
+    font-family: 'Playfair Display', serif;;
+}
+}
+    </style>
+    {% endblock %}
+
+</head>
+    
+
+{% block body%}
+    
+    <div class="img">
+<pre id="ab2">
+We are the 
+solution of 
+business growth
+</pre>
+    </div>
+    <div class="abus">
+        <div class="waw">
+            <div class="abimg">
+
+            </div>
+            <div class="abcon">
+<div class="infurniture"><span id="intitle">About Us
+</span><br>
+At Adrise, we believe that great marketing doesn’t just speak—it moves. We help businesses grow by using the power of animation and motion design to tell stories that are engaging, memorable, and effective. In a world flooded with static content, we bring brands to life through animated visuals that captivate attention and spark interest instantly.
+
+From startups to established companies, we partner with businesses of all sizes to create high-impact marketing assets—from animated images and explainer content to visually rich campaigns that communicate value with clarity and style. Our team blends creativity, technology, and strategy to deliver results that go beyond just looking good—they drive real business outcomes.
+
+At Adrise, our mission is simple: to help your brand rise above the noise and connect with your audience in a way that’s fresh, fun, and future-ready. If you’re ready to turn ideas into motion and make your message unforgettable, we’re here to make it happen.</div>
+            </div>
+
+        </div>
+<h1 >Our team</h1>
+<div class="gallery-container">
+    <div class="galleryitem1" >
+        <p id="n1">Prof. Vinoth(Guide)</p>
+    </div>
+    <div class="galleryitem2" >
+        <p id="n2">Shashi(Designer)</p>
+    </div>
+    <div class="galleryitem3" >
+        <p id="n3">Viraj(Developer)</p>
+    </div>
+    <div class="galleryitem4" >
+        <p id="n4">Deepak(Designer)</p>
+    </div>
+    <div class="galleryitem5" >
+        <p id="n5">Chetan(Designer)</p>
+    </div>
+    <div class="galleryitem6" >
+        <p id="n6">Niwas(Designer)</p>
+    </div>
+    </div>
+    </div>
+    <div class="mem">
+        <div id="mpc1"><pre>Keep in
+Touch With 
+Us!</pre> </div>
+        <div id="mpc2"><a href="https://www.instagram.com/"><div id="Imp2"></div></a></div>
+        <div id="mpc3"><a href="https://www.facebook.com/"><div id="Imp3"></div></a></div>
+        <div id="mpc4"><a href="https://x.com/"><div id="Imp4"></div></a></div>
+        <div id="mpc4"><a href="https://www.linkedin.com/"><div id="Imp5"></div></a></div>
+
+    </div>
+    
+    <div class="tpgal">
+
+    </div>
+    
+    {%endblock%}
+</html>
+       
