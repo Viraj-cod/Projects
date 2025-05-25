@@ -1,0 +1,344 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'one/first.css'%}">
+    <style>
+        .img{
+                height: 600px;
+                background-image: url("{% static 'img/grow.jpg' %}");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: blueviolet;
+                width: 100vw;
+                
+        }
+        .sym1{
+    
+    background-color: white;
+    background-image: url("{% static 'img/handshake.png' %}");
+    background-position: top;
+    background-size: 120px;
+    background-repeat: no-repeat;
+      
+}
+.sym2{
+    
+    background-color: white;
+    background-image: url("{% static 'img/doctor.png' %}");
+    background-position: top;
+    background-size: 120px;
+    background-repeat: no-repeat;
+      
+}
+.sym3{
+    
+    background-color: white;
+    background-image: url("{% static 'img/grad.png' %}");
+    background-repeat:no-repeat;
+    background-size: 120px;
+    background-position:top;
+    
+    
+      
+}
+.sym4{
+    
+    background-color: white;
+    background-image: url("{% static 'img/bank.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+      
+}
+.indisplay{
+    background-image: url("{% static 'img/med.jpg' %}");
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+}
+
+.carousel-container {
+            position: relative;
+            width: 900px;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 30px;
+            height: 400px;
+            background-color: blue;
+            border-radius: 1%;
+            
+        }
+
+        /* Carousel Images */
+        .carousel-images {
+            
+            height: 600px;
+           
+            display: flex;
+            
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Navigation Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            transform: translateY(-50%);
+            opacity: 0;
+            
+        }
+        .coro{
+            background-color: rgb(9, 9, 34);
+            padding: 2%;
+            width:96vw;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        /* Optional: Dots Indicator */
+        .dots {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .dot {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+        #Imp2{
+            height: 120px;
+            width: 100px;
+            margin-top: 30px;
+            background-color:  white;
+            background-image: url("{% static 'img/icon1.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        #Imp3{
+            height: 120px;
+            width: 100px;
+            margin-top: 30px;
+            background-color:  white;
+            background-image: url("{% static 'img/icon2.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        #Imp4{
+            height: 120px;
+            width: 150px;
+            margin-top: 30px;
+            background-color:  white;
+            background-image: url("{% static 'img/icon3.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        #Imp5{
+            height: 120px;
+            width: 150px;
+            margin-top: 30px;
+            background-color:  white;
+            background-image: url("{% static 'img/icon4.png' %}");
+    background-position: top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+        }
+        p {
+            margin: 0;
+        }
+        
+        @media(max-width: 900px){
+            .carousel-container{
+                width: 600px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="Menu">
+        <span id="name" ><h1><a href="{% url 'main'%}">Adrise</a></h1></span>
+        <a href="{% url 'gallery'%}" class="gal" >Gallery</a>
+        <a href="{% url 'about'%}" class="about">About</a>
+        <a href="{% url 'contact'%}" class="cnt">Contact </a>
+        <a href="{% url 'pricing'%}" class="price">Services</a>
+    </div>
+
+    
+    <div class="img">
+<pre id="msg">Grow Your 
+Business With 
+US!
+</pre>
+    </div>
+<!--
+    <div class="he">
+        <h1 id="ct">Sectors</h1>
+</div>
+-->
+    <div class="abt">
+        <div class="blocks">
+            <div class="block1">
+                <div class="sym1"><span id="intext">Business</span></div>
+                <div class="sym2"><span id="intext">Health</span></div>
+            </div>
+            <div class="block2">
+                <div class="sym3"><span id="intext">Education</span></div>
+                <div class="sym4"><span id="intext">Goverment</span></div>
+            </div>
+        </div>
+        <div class="abt_img"><pre>We contribute
+in the growth 
+of these sectors.
+<a href="{% url 'pricing' %}">see more</a></pre></div>
+    </div>
+
+    <div class="coro">
+        <div class="work"><h1 >Our Work</h1></div>
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <img src="{% static 'img/temp1.jpeg' %}" alt="Image 1">
+            <img src="{% static 'img/temp2.jpeg' %}" alt="Image 2">
+            <img src="{% static 'img/temp3.jpeg' %}" alt="Image 3">
+        </div>
+    </div>
+        <!-- Navigation Buttons -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <!--ab-->
+    <div class="mainab">
+        <div class="inab">
+      <h1>About us</h1>
+      <p>At Adrise, we specialize in transforming ideas into animated experiences that captivate, inform, and inspire. Using state-of-the-art animation technologies, we craft visually compelling marketing solutions that help businesses stand out in a crowded digital world. Our creative team blends strategic storytelling with high-impact visuals to turn complex ideas into simple, memorable content. Whether you're launching a product, rebranding, or looking to boost online engagement, we’re here to elevate your brand.
+
+From concept development to final delivery, we offer a full suite of animation services—including 2D/3D animation, motion graphics, explainer videos, and branded video content. Our process is collaborative and transparent, ensuring your vision is not only heard but amplified.
+
+We believe animation is more than movement—it's a communication tool that makes your message resonate. That’s why every frame we create is grounded in purpose and designed to connect emotionally with your audience.
+
+Our team is composed of award-winning designers, animators, and storytellers who thrive on solving creative challenges. No matter your industry—tech, healthcare, finance, education, or beyond—we tailor each project to meet your unique goals and brand identity.
+
+We also understand the power of speed and scalability in digital marketing. Our workflow is designed to deliver high-quality content on time, every time, without sacrificing creativity.
+
+Need a pitch video that wins investors? A social media campaign that drives clicks? Or internal training content that sticks? We’ve got you covered.
+
+Let us turn your brand message into a dynamic visual journey that informs, entertains, and converts.
+
+Experience the difference of design-driven storytelling with Adrise.</p>
+<a href="{% url 'about' %}"><pre style="text-decoration: underline;">read more</pre></a>
+    </div>
+
+
+    </div>
+    <div class="mem">
+        <div id="mpc1"><pre>Keep in
+Touch With
+Us!</pre> </div>
+        <div id="mpc2"><a href="https://www.instagram.com/"><div id="Imp2"></div></a></div>
+        <div id="mpc3"><a href="https://www.facebook.com/"><div id="Imp3"></div></a></div>
+        <div id="mpc4"><a href="https://x.com/"><div id="Imp4"></div></a></div>
+        <div id="mpc4"><a href="https://www.linkedin.com/"><div id="Imp5"></div></a></div>
+
+    </div>
+    
+    <div class="tp4">
+        <p>&copy; 2025 Adrise. All rights reserved.</p>
+    </div>
+
+    <!-- Optional: Dots for navigation -->
+    
+
+    <script>
+         var index = 0;
+        var images = document.querySelectorAll('.carousel-images img');
+        var dots = document.querySelectorAll('.dot');
+
+        function showImage(n) {
+            if (n >= images.length) index = 0;
+            if (n < 0) index = images.length - 1;
+            
+            // Move carousel
+            document.querySelector('.carousel-images').style.transform = `translateX(${-index * 100}%)`;
+
+            // Highlight active dot
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        // Next and Previous Button Events
+        document.querySelector('.next').addEventListener('click', function() {
+            index++;
+            showImage(index);
+        });
+
+        document.querySelector('.prev').addEventListener('click', function() {
+            index--;
+            showImage(index);
+        });
+
+        // Dot Navigation Events
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', function() {
+                index = i;
+                showImage(index);
+            });
+        });
+
+        // Auto-change every 3 seconds
+        setInterval(function() {
+            index++;
+            showImage(index);
+        }, 3000);
+
+        // Initial display
+        showImage(index);
+
+    </script>
+    <script src="{% static 'js/bt.js' %}"></script>
+</body>
+</html>

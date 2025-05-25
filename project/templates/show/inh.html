@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'one/first.css'%}">
+    {% block extra_styles %}{% endblock %}
+    </style>
+</head>
+
+<body>
+    
+    <div class="Menu">
+        <span id="name" ><h1><a href="{% url 'main'%}">Adrise</a></h1></span>        <a href="{% url 'gallery'%}" class="gal" >Gallery</a>
+        <a href="{% url 'about'%}" class="about">About</a>
+        <a href="{% url 'contact'%}" class="cnt">Contact </a>
+        <a href="{% url 'pricing'%}" class="price">Services</a>
+    </div>
+    {% block body%}{% endblock %}
+
+    
+    
+   
+    <script src="{% static 'js/bt.js' %}">
+
+    </script>
+</body>
+
+</html>
